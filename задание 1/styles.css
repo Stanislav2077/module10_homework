@@ -14,7 +14,7 @@
     line-height: 15px;
     text-transform: uppercase;
     color: white;
-    background: blue;
+    background: #315efb;
     transition: 0.3s;
 }
 
@@ -24,17 +24,17 @@
 }
 
 .btn_text {
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
-.btn_icon_1 {
+.btn_icon {
     width: 20px;
     height: 20px;
     font-size: 20px;
     padding-left: 5px;
 }
 
-.btn--magic .btn_icon_1 {
+.btn--magic .btn_icon {
     animation-duration: 1s;
     animation-name: magic;
     animation-iteration-count: infinite;

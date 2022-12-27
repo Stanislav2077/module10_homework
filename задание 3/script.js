@@ -34,7 +34,7 @@ btnEnd.addEventListener("click", () => {
 const sendPositionLink = (position) => {
     const latitude = position.coords.latitude;
     const longitude = position.coords.longitude;
-    const locationLink = `<a href="https://www.openstreetmap.org/#map=18/${latitude}/${longitude}" target="_blank">Моя Геолокация</a>`;
+    const locationLink = `<a href="https://www.openstreetmap.org/#map=18/${latitude}/${longitude}" target="_blank">Гео-локация</a>`;
 
     socket.send(locationLink);
     showSentMessage(locationLink);
@@ -48,12 +48,12 @@ btn.addEventListener("click", () => {
 function showRecevedMessage(message) {
     const recevied = document.createElement("div");
     recevied.classList.add("recevied");
-    recevied.innerHTML = "Server  message: " + message;
+    recevied.innerHTML = "Сообщение сервера: " + message;
     messages.prepend(recevied);
 }
 function showSentMessage(message) {
     const sent = document.createElement("div");
     sent.classList.add("sent");
-    sent.innerHTML = "User  message: " + message;
+    sent.innerHTML = "Сообщение отправителя: " + message;
     messages.prepend(sent);
 }
